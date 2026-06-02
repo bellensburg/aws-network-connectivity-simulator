@@ -1,51 +1,56 @@
 # aws-network-logic-python
 
-Step 1 — Create README.md
-Paste this into your README:
-
 AWS Network Logic (Python)
 This repository contains small Python utilities that simulate AWS‑style network reasoning.
+
 The goal is to demonstrate the ability to:
 
-parse AWS‑like JSON
+- parse AWS‑like JSON
 
-find objects by ID
+- find objects by ID
 
-evaluate routing logic
+- evaluate routing logic
 
-simulate Transit Gateway reachability
+- simulate Transit Gateway reachability
 
-write clean, testable Python functions
+- write clean, testable Python functions
+
 
 These patterns match real AWS networking tasks such as:
 
-checking if two subnets can communicate
+- checking if two subnets can communicate
 
-determining TGW attachment relationships
+- determining TGW attachment relationships
 
-evaluating route table entries
+- evaluating route table entries
 
-validating network paths
+- validating network paths
+
+
 
 Contents
 data/sample_topology.json — Example AWS‑style topology
 
-src/find_by_id.py — Utility to find objects in lists
+- src/find_by_id.py — Utility to find objects in lists
 
-src/reachability.py — Logic to determine subnet‑to‑subnet reachability
+- src/reachability.py — Logic to determine subnet‑to‑subnet reachability
 
-src/tgw_logic.py — Transit Gateway attachment evaluation
+- src/tgw_logic.py — Transit Gateway attachment evaluation
+
+
 
 Skills Demonstrated
-Python (loops, conditions, dicts, lists)
+- Python (loops, conditions, dicts, lists)
 
-JSON parsing
+- JSON parsing
 
-AWS networking concepts (VPC, Subnets, TGW, Route Tables)
+- AWS networking concepts (VPC, Subnets, TGW, Route Tables)
 
-Network automation mindset
+- Network automation mindset
 
-Clean code structure
+- Clean code structure
+
+
 
 How to run:
-python3 src/reachability.py
+- python3 src/reachability.py
