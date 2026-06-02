@@ -1,0 +1,27 @@
+{
+  "vpcs": [
+    {"id": "vpc-a"},
+    {"id": "vpc-b"}
+  ],
+
+  "subnets": [
+    {"id": "subnet-a1", "vpc_id": "vpc-a"},
+    {"id": "subnet-b1", "vpc_id": "vpc-b"}
+  ],
+
+  "tgw_attachments": [
+    {"tgw_id": "tgw-1", "vpc_id": "vpc-a"},
+    {"tgw_id": "tgw-1", "vpc_id": "vpc-b"}
+  ],
+
+  "route_tables": [
+    {
+      "id": "rt-a",
+      "vpc_id": "vpc-a",
+      "routes": [
+        {"destination": "10.0.0.0/16", "target": "local"},
+        {"destination": "0.0.0.0/0", "target": "igw"}
+      ]
+    }
+  ]
+}
